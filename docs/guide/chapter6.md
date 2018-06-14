@@ -247,7 +247,7 @@ new Vue({
   },
   methods: {
     doShuffle: function () {
-      this.list = shuffle(this.list)
+      this.list = _.shuffle(this.list)
     },
     doAdd: function() {
       var newNumber = Math.max.apply(null, this.list) + 1
