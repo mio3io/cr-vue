@@ -121,6 +121,12 @@ Fork してご利用下さい。
     <td><code>a.price > b.price ? a.price:b.price</code> </td>
     <td><code>a > b.price ? a:b.price</code></td>
   </tr>
+  <tr>
+    <td>8</td>
+    <td>267</td>
+    <td><code>store.dispatch('doUpdate', event.target.value)</code></td>
+    <td><code>this.$store.dispatch('doUpdate', event.target.value)</code></td>
+  </tr>
   </tbody>
 </table>
 
