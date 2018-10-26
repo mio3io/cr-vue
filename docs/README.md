@@ -21,7 +21,7 @@ footer: Copyright © 2018 mio / C&R研究所
 
 <section class="home-book">
   <div class="home-book-image">
-    <img src="/images/cover-s.png" width="180" class="home-book-thumb">
+    <img src=".vuepress/public/images/cover-s.png" width="180" class="home-book-thumb">
   </div>
   <div class="home-book-text">
 
