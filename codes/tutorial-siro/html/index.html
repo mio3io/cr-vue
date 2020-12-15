@@ -8,12 +8,13 @@ t<!DOCTYPE html>
 <body>
   <div id="app">
     <h1>todo チュートリアル</h1>
+    <!-- 絞り込みラジオボタン -->
     <label v-for="label in options">
       <input type="radio"
         v-model="current"
         v-bind:value="label.value">{{ label.label }}
     </label>
-    <!-- 絞り込みラジオボタン -->
+    （{{ computedTodos.length }} 件を表示）
     <table>
       <!-- テーブルヘッダー -->
       <thead>
@@ -26,7 +27,7 @@ t<!DOCTYPE html>
       </thead>
       <tbody>
         <!-- [1] ここに <tr> で ToDo の要素を1行づつ繰り返し表示したい -->
-          <tr v-for="item in todos" v-bind:key="item.id">
+          <tr v-for="item in computedTodos" v-bind:key="item.id">
             <!-- 要素の情報 -->
             <th> {{ item.id }} </th>
             <td> {{ item.comment }} </td>
